@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 -->
 ---
 
-# 👋 Hey, I’m Tej
+# 👋 Hey, I’m Tejas
 
 ---
 
