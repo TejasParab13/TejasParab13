@@ -12,9 +12,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
----
 
-<h1>👋 Hey, I’m Tej</h1>
+<h1>
+👋 Hey, I’m Tej
 
 ---
 
