@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 -->
 ---
 
-👋 Hey, I’m Tejas
+<h1>👋 Hey, I’m Tej</h1>
 
 ---
 
