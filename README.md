@@ -14,3 +14,35 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+# 👋 Hey, I’m Tejas
+
+### 🚀 Exploring tech, systems, and visuals
+
+I’m an indie creator experimenting across **game dev, app dev, and visual storytelling**.  
+I like building systems, polishing details, and learning by shipping real projects.
+
+---
+
+## 🧠 What I do
+- 🎮 Game development (systems, mechanics, AI)
+- 📱 App development
+- 🎬 Video editing & VFX
+- 🧩 Exploring new fields and workflows
+
+---
+
+## 🛠 Tools & Tech
+**Code & Dev**
+- Unity (C#)
+- Flutter
+
+**Creative**
+- Premiere Pro (PR)
+- After Effects (AE)
+- Lightroom (LR)
+- Photoshop (PS)
+
+---
+
+> *Exploring ideas one project at a time.*
