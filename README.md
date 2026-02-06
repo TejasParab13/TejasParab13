@@ -14,19 +14,19 @@ Here are some ideas to get you started:
 -->
 ---
 
-#👋 Hey, I’m Tejas
+**👋 Hey, I’m Tejas**
 
 ---
 
 ### 🚀 Exploring tech, systems, and visuals
 
 I’m an indie creator experimenting across **game dev, app dev, and visual storytelling**.  
-I like building systems, polishing details, and learning by shipping real projects.
+I like building systems, polishing details, and learning by making real projects.
 
 ---
 
 ## 🧠 What I do
-- 🎮 Game development (systems, mechanics, AI)
+- 🎮 Game development (exploring)
 - 📱 App development
 - 🎬 Video editing & VFX
 - 🧩 Exploring new fields and workflows
