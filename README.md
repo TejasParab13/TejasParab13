@@ -1,49 +1,56 @@
-<!--
-**TejasParab13/TejasParab13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1 align="center">👋 Hi, I'm Tejas</h1>
 
-Here are some ideas to get you started:
+<p align="center">
+  <strong>Indie creator</strong> building things at the intersection of games, apps & visuals
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  I love creating systems, polishing details, and learning by shipping real projects.
+</p>
 
-<h1>
-👋 Hey, I’m Tej
+<br>
 
----
+<div align="center">
+  <img src="https://img.shields.io/badge/🎮%20Game%20Dev-333333?style=for-the-badge&logo=unity&logoColor=white" alt="Game Dev" height="28"/>
+  <img src="https://img.shields.io/badge/📱%20App%20Dev-333333?style=for-the-badge&logo=flutter&logoColor=54C5F8" alt="App Dev" height="28"/>
+  <img src="https://img.shields.io/badge/🎬%20Video%20%26%20VFX-333333?style=for-the-badge&logo=adobeaftereffects&logoColor=purple" alt="Video & VFX" height="28"/>
+</div>
 
-### 🚀 Exploring tech, systems, and visuals
+<br>
 
-I’m an indie creator experimenting across **game dev, app dev, and visual storytelling**.  
-I like building systems, polishing details, and learning by making real projects.
+<h2 align="center">🧠 What I'm exploring right now</h2>
 
----
+<p align="center">
+  • Game development & real-time experiences<br>
+  • Cross-platform mobile/desktop apps<br>
+  • Video editing • Motion graphics • VFX<br>
+  • New tools, workflows & creative systems
+</p>
 
-## 🧠 What I do
-- 🎮 Game development (exploring)
-- 📱 App development
-- 🎬 Video editing & VFX
-- 🧩 Exploring new fields and workflows
+<br>
 
----
+<h2 align="center">🛠️ Tools I usually work with</h2>
 
-## 🛠 Tools & Tech
-**Code & Dev**
-- Unity (C#)
-- Flutter
+<div align="center">
+  <table>
+    <tr>
+      <th>Game & App</th>
+      <th>Creative Suite</th>
+    </tr>
+    <tr>
+      <td valign="top">
+        • Unity<br>
+        • Flutter<br>
+        • C# • Dart
+      </td>
+      <td valign="top">
+        • Blender<br>
+        • Premiere Pro<br>
+        • After Effects<br>
+        • Photoshop<br>
+        • Lightroom
+      </td>
+    </tr>
+  </table>
+</div>
 
-**Creative**
-- Premiere Pro (PR)
-- After Effects (AE)
-- Lightroom (LR)
-- Photoshop (PS)
-
----
-
-> *Exploring ideas one project at a time.*
