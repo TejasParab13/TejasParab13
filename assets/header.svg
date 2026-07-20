@@ -48,7 +48,7 @@
     }
   </style>
 
-  <!-- 1. Header Info (Slide Up) -->
+  <!-- Header Info -->
   <g class="slide-up d1">
     <text class="mono" fill="var(--muted)" x="48" y="44" font-size="11" letter-spacing="3.5">INFORMATION : ABOUT</text>
     <text class="mono" fill="var(--muted)" x="952" y="44" font-size="11" letter-spacing="3.5" text-anchor="end">INDIA : GOA</text>
@@ -57,12 +57,12 @@
   <!-- Top Divider -->
   <line class="line d1" x1="48" y1="58" x2="952" y2="58" stroke="var(--rule)" stroke-width="1"/>
 
-  <!-- NAME (Slide Up) -->
+    <!-- NAME -->
   <g class="slide-up d2">
-    <text fill="var(--bone)" class="mono" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2">Tejas Parab</text>
+    <text fill="var(--bone)" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2" font-family="Arial, sans-serif">Tejas Parab</text>
   </g>
 
-  <!-- DESCRIPTION (Left-to-Right Reveal) -->
+  <!-- DESCRIPTION -->
   <g class="reveal t1">
     <text class="mono" x="63" y="210" font-size="15" fill="var(--muted)">| First-year IT student at GOA COLLEGE OF ENGINEERING, GOA.</text>
   </g>
@@ -78,7 +78,7 @@
   <!-- Bottom Divider -->
   <line class="line d6" x1="48" y1="320" x2="952" y2="320" stroke="var(--rule)" stroke-width="1"/>
 
-  <!-- Footer Info (Slide Up) -->
+  <!-- Footer Info -->
   <g class="slide-up d6">
     <text fill="var(--muted)" class="mono" x="48" y="350" font-size="11.5" letter-spacing="3">HELLO WORLD</text> 
     <text fill="var(--muted)" class="mono" x="952" y="350" font-size="11.5" letter-spacing="3" text-anchor="end">ITE — 2025 TO 2029</text>
