@@ -1,14 +1,17 @@
 <svg viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tejas Parab">
   <style>
-    /* Colors */
-    :root { --bone:#444; --rule:#C0C0C0; --muted:#888; --dim:#AAA; --accent:#555; }
-    @media (prefers-color-scheme: dark) { 
-      :root { --bone:#DDD; --rule:#444; --muted:#777; --dim:#666; --accent:#AAA; } 
+    /* Pure White Colors - No Shades */
+    :root { 
+      --bone: #FFFFFF; 
+      --rule: #FFFFFF; 
+      --muted: #FFFFFF; 
+      --dim: #FFFFFF; 
+      --accent: #FFFFFF; 
     }
     
     .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
     
-    /* Original Animation Engine (Optimized for Smoothness) */
+    /* Animation Engine (Hardware Accelerated) */
     .draw { 
       stroke-dasharray: 1000; 
       stroke-dashoffset: 1000; 
@@ -34,7 +37,7 @@
     }
     @keyframes fade { to { opacity: 1; } }
 
-    /* Left-to-Right Reveal for Description (Hardware Accelerated) */
+    /* Left-to-Right Reveal for Description */
     .reveal { 
       opacity: 0; 
       animation: slideReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
@@ -45,13 +48,13 @@
       to { opacity: 1; transform: translate3d(0, 0, 0); clip-path: inset(0 0 0 0); } 
     }
     
-    /* Original Timing Delays */
-    .a1 { animation-delay: .2s; }
-    .a2 { animation-delay: .8s; }
-    .a3 { animation-delay: .9s; }
-    .a4 { animation-delay: 1.2s; }
+    /* Timing Delays */
+    .a1 { animation-delay: .25s; }
+    .a2 { animation-delay: .5s; }
+    .a3 { animation-delay: 1s; }
+    .a4 { animation-delay: 1.25s; }
     .a5 { animation-delay: 1.5s; }
-    .a6 { animation-delay: 1.7s; }
+    .a6 { animation-delay: 1.8s; }
 
     /* Reduced Motion Support */
     @media (prefers-reduced-motion: reduce) {
@@ -70,12 +73,12 @@
   <!-- Top Divider -->
   <line class="draw a1" x1="48" y1="58" x2="952" y2="58" stroke="var(--rule)" stroke-width="1"/>
 
-  <!-- NAME (Now hardware-accelerated for maximum smoothness) -->
+  <!-- NAME -->
   <g class="rise a2">
     <text fill="var(--bone)" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2" font-family="Arial, sans-serif">Tejas Parab</text>
   </g>
 
-  <!-- DESCRIPTION (Reveals from left, using original timing) -->
+  <!-- DESCRIPTION -->
   <g class="reveal a3">
     <text class="mono" x="63" y="210" font-size="15" fill="var(--muted)">| First-year IT student at GOA COLLEGE OF ENGINEERING.</text>
   </g>
