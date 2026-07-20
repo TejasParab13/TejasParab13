@@ -59,7 +59,7 @@
 
   <!-- NAME (Slide Up) -->
   <g class="slide-up d2">
-    <text fill="var(--bone)" class="mono" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2">TeJas Parab</text>
+    <text fill="var(--bone)" class="mono" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2">Tejas Parab</text>
   </g>
 
   <!-- DESCRIPTION (Left-to-Right Reveal) -->
@@ -80,7 +80,7 @@
 
   <!-- Footer Info (Slide Up) -->
   <g class="slide-up d6">
-    <text fill="var(--muted)" class="mono" x="48" y="350" font-size="11.5" letter-spacing="3">THINGS TO PUT HERE</text> 
+    <text fill="var(--muted)" class="mono" x="48" y="350" font-size="11.5" letter-spacing="3">HELLO WORLD</text> 
     <text fill="var(--muted)" class="mono" x="952" y="350" font-size="11.5" letter-spacing="3" text-anchor="end">ITE — 2025 TO 2029</text>
   </g>
 </svg>
