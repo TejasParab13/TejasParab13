@@ -6,80 +6,93 @@
       :root { --bone:#DDD; --rule:#444; --muted:#777; --dim:#666; --accent:#AAA; } 
     }
     
-    .mono { font-family: ui-monospace, monospace; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
     
-    /* Slide Up Animation (for Name, Header, Footer) */
-    .slide-up { 
-      opacity: 0; 
-      animation: slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+    /* Original Animation Engine (Optimized for Smoothness) */
+    .draw { 
+      stroke-dasharray: 1000; 
+      stroke-dashoffset: 1000; 
+      animation: draw 1.4s cubic-bezier(.6,0,.2,1) forwards; 
+      will-change: stroke-dashoffset;
     }
-    @keyframes slideUp { 
-      from { opacity: 0; transform: translateY(15px); } 
-      to { opacity: 1; transform: translateY(0); } 
-    }
-    
-    /* Line Drawing Animation */
-    .line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.5s ease forwards; }
     @keyframes draw { to { stroke-dashoffset: 0; } }
     
-    /* Left-to-Right Reveal (for Description) */
+    .rise { 
+      opacity: 0; 
+      animation: rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+      will-change: transform, opacity;
+    }
+    @keyframes rise { 
+      from { opacity: 0; transform: translate3d(0, 12px, 0); } 
+      to { opacity: 1; transform: translate3d(0, 0, 0); } 
+    }
+    
+    .fade { 
+      opacity: 0; 
+      animation: fade 0.7s ease forwards; 
+      will-change: opacity;
+    }
+    @keyframes fade { to { opacity: 1; } }
+
+    /* Left-to-Right Reveal for Description (Hardware Accelerated) */
     .reveal { 
       opacity: 0; 
-      animation: slideReveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+      animation: slideReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+      will-change: transform, opacity, clip-path;
     }
     @keyframes slideReveal { 
-      from { opacity: 0; transform: translateX(-10px); clip-path: inset(0 100% 0 0); } 
-      to { opacity: 1; transform: translateX(0); clip-path: inset(0 0 0 0); } 
+      from { opacity: 0; transform: translate3d(-10px, 0, 0); clip-path: inset(0 100% 0 0); } 
+      to { opacity: 1; transform: translate3d(0, 0, 0); clip-path: inset(0 0 0 0); } 
     }
     
-    /* Delays */
-    .d1{animation-delay:.2s} 
-    .d2{animation-delay:.5s} 
-    
-    /* Description Staggered Delays */
-    .t1{animation-delay:1.0s} 
-    .t2{animation-delay:1.4s} 
-    .t3{animation-delay:1.8s} 
-    
-    .d6{animation-delay:2.2s}
+    /* Original Timing Delays */
+    .a1 { animation-delay: .2s; }
+    .a2 { animation-delay: .8s; }
+    .a3 { animation-delay: .9s; }
+    .a4 { animation-delay: 1.2s; }
+    .a5 { animation-delay: 1.5s; }
+    .a6 { animation-delay: 1.7s; }
 
-    @media (prefers-reduced-motion: reduce) { 
-      .slide-up, .line, .reveal { animation:none; opacity:1; stroke-dashoffset:0; transform:none; clip-path:none; } 
+    /* Reduced Motion Support */
+    @media (prefers-reduced-motion: reduce) {
+      .draw, .rise, .fade, .reveal { animation: none; }
+      .draw { stroke-dashoffset: 0; }
+      .rise, .fade, .reveal { opacity: 1; transform: none; clip-path: none; }
     }
   </style>
 
   <!-- Header Info -->
-  <g class="slide-up d1">
+  <g class="rise a1">
     <text class="mono" fill="var(--muted)" x="48" y="44" font-size="11" letter-spacing="3.5">INFORMATION : ABOUT</text>
     <text class="mono" fill="var(--muted)" x="952" y="44" font-size="11" letter-spacing="3.5" text-anchor="end">INDIA : GOA</text>
   </g>
   
   <!-- Top Divider -->
-  <line class="line d1" x1="48" y1="58" x2="952" y2="58" stroke="var(--rule)" stroke-width="1"/>
+  <line class="draw a1" x1="48" y1="58" x2="952" y2="58" stroke="var(--rule)" stroke-width="1"/>
 
-    <!-- NAME -->
-  <g class="slide-up d2">
+  <!-- NAME (Now hardware-accelerated for maximum smoothness) -->
+  <g class="rise a2">
     <text fill="var(--bone)" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2" font-family="Arial, sans-serif">Tejas Parab</text>
   </g>
 
-  <!-- DESCRIPTION -->
-  <g class="reveal t1">
-    <text class="mono" x="63" y="210" font-size="15" fill="var(--muted)">| First-year IT student at GOA COLLEGE OF ENGINEERING, GOA.</text>
+  <!-- DESCRIPTION (Reveals from left, using original timing) -->
+  <g class="reveal a3">
+    <text class="mono" x="63" y="210" font-size="15" fill="var(--muted)">| First-year IT student at GOA COLLEGE OF ENGINEERING.</text>
   </g>
   
-  <g class="reveal t2">
+  <g class="reveal a4">
     <text class="mono" x="63" y="230" font-size="15" fill="var(--muted)">| I build software to solve real problems and learn by shipping.</text>
   </g>
   
-  <g class="reveal t3">
+  <g class="reveal a5">
     <text class="mono" x="63" y="250" font-size="15" fill="var(--muted)">| Constantly experimenting with new tools and expanding my technical repertoire.</text>
   </g>
 
   <!-- Bottom Divider -->
-  <line class="line d6" x1="48" y1="320" x2="952" y2="320" stroke="var(--rule)" stroke-width="1"/>
+  <line class="draw a5" x1="48" y1="320" x2="952" y2="320" stroke="var(--rule)" stroke-width="1"/>
 
   <!-- Footer Info -->
-  <g class="slide-up d6">
+  <g class="fade a6">
     <text fill="var(--muted)" class="mono" x="48" y="350" font-size="11.5" letter-spacing="3">HELLO WORLD</text> 
     <text fill="var(--muted)" class="mono" x="952" y="350" font-size="11.5" letter-spacing="3" text-anchor="end">ITE — 2025 TO 2029</text>
   </g>
