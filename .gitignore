@@ -1,0 +1,12 @@
+# Ignore everything in the root
+*
+
+# But don't ignore the .gitignore file itself
+!.gitignore
+
+# Don't ignore the assets folder and its contents
+!assets/
+!assets/**
+
+# Don't ignore README.md
+!README.md

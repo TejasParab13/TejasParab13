@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tejas Parab">
+  <style>
+    /* Colors */
+    :root { --bone:#444; --rule:#C0C0C0; --muted:#888; --dim:#AAA; --accent:#555; }
+    @media (prefers-color-scheme: dark) { 
+      :root { --bone:#DDD; --rule:#444; --muted:#777; --dim:#666; --accent:#AAA; } 
+    }
+    
+    .mono { font-family: ui-monospace, monospace; }
+    
+    /* Slide Up Animation (for Name, Header, Footer) */
+    .slide-up { 
+      opacity: 0; 
+      animation: slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+    }
+    @keyframes slideUp { 
+      from { opacity: 0; transform: translateY(15px); } 
+      to { opacity: 1; transform: translateY(0); } 
+    }
+    
+    /* Line Drawing Animation */
+    .line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.5s ease forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    
+    /* Left-to-Right Reveal (for Description) */
+    .reveal { 
+      opacity: 0; 
+      animation: slideReveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+    }
+    @keyframes slideReveal { 
+      from { opacity: 0; transform: translateX(-10px); clip-path: inset(0 100% 0 0); } 
+      to { opacity: 1; transform: translateX(0); clip-path: inset(0 0 0 0); } 
+    }
+    
+    /* Delays */
+    .d1{animation-delay:.2s} 
+    .d2{animation-delay:.5s} 
+    
+    /* Description Staggered Delays */
+    .t1{animation-delay:1.0s} 
+    .t2{animation-delay:1.4s} 
+    .t3{animation-delay:1.8s} 
+    
+    .d6{animation-delay:2.2s}
+
+    @media (prefers-reduced-motion: reduce) { 
+      .slide-up, .line, .reveal { animation:none; opacity:1; stroke-dashoffset:0; transform:none; clip-path:none; } 
+    }
+  </style>
+
+  <!-- 1. Header Info (Slide Up) -->
+  <g class="slide-up d1">
+    <text class="mono" fill="var(--muted)" x="48" y="44" font-size="11" letter-spacing="3.5">INFORMATION : ABOUT</text>
+    <text class="mono" fill="var(--muted)" x="952" y="44" font-size="11" letter-spacing="3.5" text-anchor="end">INDIA : GOA</text>
+  </g>
+  
+  <!-- Top Divider -->
+  <line class="line d1" x1="48" y1="58" x2="952" y2="58" stroke="var(--rule)" stroke-width="1"/>
+
+  <!-- NAME (Slide Up) -->
+  <g class="slide-up d2">
+    <text fill="var(--bone)" class="mono" x="46" y="160" font-size="76" font-weight="700" letter-spacing="-2">TeJas Parab</text>
+  </g>
+
+  <!-- DESCRIPTION (Left-to-Right Reveal) -->
+  <g class="reveal t1">
+    <text class="mono" x="63" y="210" font-size="15" fill="var(--muted)">| First-year IT student at GOA COLLEGE OF ENGINEERING, GOA.</text>
+  </g>
+  
+  <g class="reveal t2">
+    <text class="mono" x="63" y="230" font-size="15" fill="var(--muted)">| I build software to solve real problems and learn by shipping.</text>
+  </g>
+  
+  <g class="reveal t3">
+    <text class="mono" x="63" y="250" font-size="15" fill="var(--muted)">| Constantly experimenting with new tools and expanding my technical repertoire.</text>
+  </g>
+
+  <!-- Bottom Divider -->
+  <line class="line d6" x1="48" y1="320" x2="952" y2="320" stroke="var(--rule)" stroke-width="1"/>
+
+  <!-- Footer Info (Slide Up) -->
+  <g class="slide-up d6">
+    <text fill="var(--muted)" class="mono" x="48" y="350" font-size="11.5" letter-spacing="3">THINGS TO PUT HERE</text> 
+    <text fill="var(--muted)" class="mono" x="952" y="350" font-size="11.5" letter-spacing="3" text-anchor="end">ITE — 2025 TO 2029</text>
+  </g>
+</svg>
