@@ -1,12 +1,23 @@
 <svg viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tejas Parab">
   <style>
-    /* Pure White Colors - No Shades */
+    /* Solid Black for Light Mode */
     :root { 
-      --bone: #FFFFFF; 
-      --rule: #FFFFFF; 
-      --muted: #FFFFFF; 
-      --dim: #FFFFFF; 
-      --accent: #FFFFFF; 
+      --bone: #000000; 
+      --rule: #000000; 
+      --muted: #000000; 
+      --dim: #000000; 
+      --accent: #000000; 
+    }
+    
+    /* Solid White for Dark Mode */
+    @media (prefers-color-scheme: dark) { 
+      :root { 
+        --bone: #FFFFFF; 
+        --rule: #FFFFFF; 
+        --muted: #FFFFFF; 
+        --dim: #FFFFFF; 
+        --accent: #FFFFFF; 
+      } 
     }
     
     .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
@@ -49,12 +60,12 @@
     }
     
     /* Timing Delays */
-    .a1 { animation-delay: .25s; }
+    .a1 { animation-delay: .2s; }
     .a2 { animation-delay: .5s; }
-    .a3 { animation-delay: 1s; }
-    .a4 { animation-delay: 1.25s; }
-    .a5 { animation-delay: 1.5s; }
-    .a6 { animation-delay: 1.8s; }
+    .a3 { animation-delay: .9s; }
+    .a4 { animation-delay: 1.2s; }
+    .a5 { animation-delay: 1.4s; }
+    .a6 { animation-delay: 1.7s; }
 
     /* Reduced Motion Support */
     @media (prefers-reduced-motion: reduce) {
