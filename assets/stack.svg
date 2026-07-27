@@ -86,7 +86,7 @@
 
   <!-- Languages -->
   <g class="reveal a3">
-    <text fill="var(--dim)" class="mono" x="48" y="150" font-size="20" letter-spacing="1">LANGUAGES</text>
+    <text fill="var(--dim)" class="mono" x="48" y="150" font-size="20" font-weight="600" letter-spacing="1">LANGUAGES</text>
   </g>
   
   <g class="reveal a4">
@@ -102,7 +102,7 @@
 
   <!-- Tools -->
   <g class="reveal a6">
-    <text fill="var(--dim)" class="mono" x="48" y="250" font-size="20" letter-spacing="1">TOOLS</text>
+    <text fill="var(--dim)" class="mono" x="48" y="250" font-size="20" font-weight="600" letter-spacing="1">TOOLS</text>
   </g>
   
   <g class="reveal a7">
